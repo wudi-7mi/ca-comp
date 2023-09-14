@@ -62,10 +62,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/" class="nav-link px-2 link-secondary">首页</a></li>
-        <li><a href="/plan" class="nav-link px-2">大赛方案</a></li>
-        <li><a href="/settings" class="nav-link px-2">赛题设置</a></li>
-        <li><a href="/submit" class="nav-link px-2">提交方式</a></li>
+        <li><router-link to="/" class="nav-link px-2 link-secondary">首页</router-link></li>
+        <li><router-link to="/plan" class="nav-link px-2">大赛方案</router-link></li>
+        <li><router-link to="/settings" class="nav-link px-2">赛题设置</router-link></li>
+        <li><router-link to="/submit" class="nav-link px-2">提交方式</router-link></li>
       </ul>
       <!-- div class="col-md-3 text-end">
         <button type="button" class="btn btn-outline-primary me-2">Login</button>

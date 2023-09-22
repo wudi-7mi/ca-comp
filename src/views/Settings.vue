@@ -44,28 +44,36 @@ import MarkdownIt from 'markdown-it';
 import MarkdownItKatex from 'markdown-it-katex';
 import { attrs } from '@mdit/plugin-attrs'
 
+import q01 from '../assets/markdowns/q01.md?raw'
+import q02 from '../assets/markdowns/q02.md?raw'
+import q03 from '../assets/markdowns/q03.md?raw'
+import q04 from '../assets/markdowns/q04.md?raw'
+import q05 from '../assets/markdowns/q05.md?raw'
+
 export default {
   data() {
     return {
       breadcrumbItems: [
-        { label: '赛题1', file: '/questions/q01.md', status: { 'breadcrumb-item': true,  'active': true } },
-        { label: '赛题2', file: '/questions/q02.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题3', file: '/questions/q03.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题4', file: '/questions/q04.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题5', file: '/questions/q05.md', status: { 'breadcrumb-item': true } },
+        { label: '赛题1', file: q01, status: { 'breadcrumb-item': true,  'active': true } },
+        { label: '赛题2', file: q02, status: { 'breadcrumb-item': true } },
+        { label: '赛题3', file: q03, status: { 'breadcrumb-item': true } },
+        { label: '赛题4', file: q04, status: { 'breadcrumb-item': true } },
+        { label: '赛题5', file: q05, status: { 'breadcrumb-item': true } },
       ],
       markdownText: '',
       renderedMarkdown: '',
     };
   },
   mounted() {
-    fetch('/questions/q01.md')
-      .then((response) => response.text())
-      .then((data) => {
-        console.log(data);
-        this.markdownText = data;
-        this.renderMarkdown();
-      });
+    // fetch(q01)
+    //   .then((response) => response.text())
+    //   .then((data) => {
+    //     console.log(data);
+    //     this.markdownText = data;
+    //     this.renderMarkdown();
+    //   });
+    this.markdownText = q01;
+    this.renderMarkdown();
   },
   methods: {
     renderMarkdown() {
@@ -76,14 +84,18 @@ export default {
       this.renderedMarkdown = md.render(this.markdownText);
     },
     renderFile(file) {
-      fetch(file)
-        .then((response) => response.text())
-        .then((data) => {
-          console.log(data);
-          this.markdownText = data;
-          this.renderMarkdown();
-        });
+      this.markdownText = file;
+      this.renderMarkdown();
     }
+    // renderFile(file) {
+    //   fetch(file)
+    //     .then((response) => response.text())
+    //     .then((data) => {
+    //       console.log(data);
+    //       this.markdownText = data;
+    //       this.renderMarkdown();
+    //     });
+    // }
   },
 };
 </script>

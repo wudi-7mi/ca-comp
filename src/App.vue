@@ -60,17 +60,21 @@ import { RouterLink, RouterView } from 'vue-router'
           <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
         </a>
       </div>
+      
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><router-link to="/" class="nav-link px-2 link-secondary">首页</router-link></li>
-        <li><router-link to="/plan" class="nav-link px-2">大赛方案</router-link></li>
-        <li><router-link to="/settings" class="nav-link px-2">赛题设置</router-link></li>
-        <li><router-link to="/submit" class="nav-link px-2">提交方式</router-link></li>
-      </ul>
-      <!-- div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div> -->
+
+      <div class="col-md-6 text-center">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><router-link to="/" class="nav-link px-2">首页</router-link></li>
+          <li><router-link to="/plan" class="nav-link px-2">大赛方案</router-link></li>
+          <li><router-link to="/settings" class="nav-link px-2">赛题设置</router-link></li>
+
+          <li><router-link to="/submit" class="nav-link px-2">提交方式</router-link></li>
+        </ul>
+      </div>
+      <div class="col-md-3 text-end">
+        <a href="http://weblog.crowdhmt.com/register" class="btn btn-primary">注册</a>
+      </div>
     </header>
   </div>
 
@@ -98,8 +102,8 @@ import { RouterLink, RouterView } from 'vue-router'
     
   </main>
 
-  <footer class="footer mt-auto py-3 bg-body-tertiary">
-    <div class="container">
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
       <span class="text-body-secondary">版权所有 © 2023 群体智能算法大赛</span>
     </div>
   </footer>

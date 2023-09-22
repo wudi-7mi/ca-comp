@@ -9,7 +9,7 @@
 
       <p class="content-subtitle">作品提交指南</p>
       <p class="lead">请参考该在线文档：
-        <a href="https://docs.qq.com/doc/DWENKZGZseUtwZlhy" class="link">【腾讯文档】群体智能算法大赛参赛指南</a> 
+        <a href="https://docs.qq.com/doc/DWENKZGZseUtwZlhy" target="_blank" class="link">【腾讯文档】群体智能算法大赛参赛指南</a> 
       </p>
 
       <p class="content-subtitle">公平竞赛</p>

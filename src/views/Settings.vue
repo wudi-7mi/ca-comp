@@ -4,7 +4,15 @@
       
       <p class="content-title" id="target">赛题设置</p>
 
-      <p class="lead"><strong>【注意】参赛请填写该在线表格：<a href="http://docs.qq.com/sheet/DWFRaQWhJWERRSlBk?tab=BB08J2">群体智能算法大赛参赛队伍统计</a></strong></p>
+      <p class="lead"><strong>【注意】参赛请填写该在线表格：<a href="http://docs.qq.com/sheet/DWFRaQWhJWERRSlBk?tab=BB08J2" target="_blank">群体智能算法大赛参赛队伍统计</a></strong></p>
+      
+      <p class="content-subtitle">数据集下载</p>
+
+      <p class="lead">
+        <a class="btn btn-lg btn-primary" target="_blank" href="https://pan.baidu.com/s/1YWxhe_9GWWemcInJyYQhpw?pwd=06ml" role="button">百度网盘</a>
+        <span style="margin-left: 20px;"></span>
+        <a class="btn btn-lg btn-warning" target="_blank" href="https://drive.google.com/drive/folders/1HMxTEIKBZcHdMUJJDztOoFFwjHfAfD4O?usp=drive_link" role="button">Google Drive</a>
+      </p>
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -35,7 +43,6 @@
       <a class="btn btn-lg btn-primary" href="#" role="button">赛题五数据 下载入口 &raquo;</a> -->
 
       <div v-html="renderedMarkdown"></div>
-      <a class="btn btn-lg btn-primary" :href="datasetLink[active]" role="button">{{ datasetText[active] }}</a>
     </div>
   </main>
 </template>
@@ -59,29 +66,14 @@ export default {
   data() {
     return {
       breadcrumbItems: [
-        { label: '赛题1', file: t01, status: { 'breadcrumb-item': true }, num: 1 },
-        { label: '赛题2', file: t02, status: { 'breadcrumb-item': true }, num: 2 },
-        { label: '赛题3', file: t03, status: { 'breadcrumb-item': true }, num: 3 },
-        { label: '赛题4', file: t04, status: { 'breadcrumb-item': true }, num: 4 },
-        { label: '赛题5', file: t05, status: { 'breadcrumb-item': true }, num: 5 },
+        { label: '赛题1', file: t01, status: { 'breadcrumb-item': true } },
+        { label: '赛题2', file: t02, status: { 'breadcrumb-item': true } },
+        { label: '赛题3', file: t03, status: { 'breadcrumb-item': true } },
+        { label: '赛题4', file: t04, status: { 'breadcrumb-item': true } },
+        { label: '赛题5', file: t05, status: { 'breadcrumb-item': true } },
       ],
       markdownText: '',
       renderedMarkdown: '',
-      active: 0,
-      datasetLink: [
-        "#",
-        "#",
-        "#",
-        "#",
-        "#",
-      ],
-      datasetText: [
-        "赛题1数据下载入口",
-        "赛题2数据下载入口",
-        "赛题3数据下载入口",
-        "赛题4数据下载入口",
-        "赛题5数据下载入口",
-      ],
     };
   },
   mounted() {
@@ -107,7 +99,6 @@ export default {
     renderFile(file, num) {
       this.markdownText = file;
       this.renderMarkdown();
-      this.active = num - 1
     },
     classSet() {
       const tableElements = document.getElementsByTagName("table");

@@ -73,7 +73,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </ul>
       </div>
       <div class="col-md-3 text-end">
-        <a href="http://weblog.crowdhmt.com/register" class="btn btn-primary">注册</a>
+        <a href="http://weblog.crowdhmt.com/register" class="btn btn-primary" target="_blank">注册</a>
       </div>
     </header>
   </div>

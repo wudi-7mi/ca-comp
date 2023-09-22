@@ -142,7 +142,7 @@
       
       <p class="content-subtitle">其他事项</p>
       <p class="lead">大赛评审规则请参赛单位登录大赛官方网站查询。大赛未尽事宜，可与大赛组委会办公室联系，联系人：赵崟岑。</p>
-      <p class="lead">大赛官方电子邮箱：<a href="mailto:crowdhmt@mail.nwpu.edu.cn">crowdhmt@mail.nwpu.edu.cn</a></p>
+      <p class="lead">大赛官方电子邮箱：<a href="mailto:crowdhmt@mail.nwpu.edu.cn" target="_blank">crowdhmt@mail.nwpu.edu.cn</a></p>
       <p class="lead">大赛官方工作QQ群：701684298，请大赛相关组织单位和参赛单位指定联系人员加入该群。</p>
       <p class="lead">同时为便于赛事工作沟通及交流，请大家关注大赛官方微信号：人机物融合群智计算。</p>
     </div>

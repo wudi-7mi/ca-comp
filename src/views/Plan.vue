@@ -3,7 +3,7 @@
     <div class="bg-body-tertiary p-5 rounded mt-3">
 
       <p class="content-title">大赛赛制</p>
-      <p class="lead">大赛采用线上报名与评审方式，请参赛队伍在大赛官方网站注册并最终提交成果。<a href="http://www.crowdhmt.com/crowdcompetition/">官网地址</a></p> 
+      <p class="lead">大赛采用线上报名与评审方式，请参赛队伍在<a href="http://weblog.crowdhmt.com/" target="_blank">CrowdHMT人机物融合群智计算系统开放平台</a>注册并最终提交成果。</p> 
       <p class="lead">赛题发布后，参赛团队线上提交团队参赛信息，独立开展赛题研究，完成赛题后线上提交参赛作品。赛题结果评测由大赛组委会专家委员会审定，并在官方网站及媒体平台公布。</p> 
       
       <p class="content-title">实施步骤</p>

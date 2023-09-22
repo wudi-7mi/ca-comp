@@ -44,7 +44,10 @@
 import MarkdownIt from 'markdown-it';
 import MarkdownItKatex from 'markdown-it-katex';
 import { attrs } from '@mdit/plugin-attrs'
-import hljs from 'highlight.js';
+import hljs from 'highlight.js/lib/core'
+import json from 'highlight.js/lib/languages/json'
+
+hljs.registerLanguage('json', json)
 
 import t01 from '../assets/markdowns/task1_description.md?raw'
 import t02 from '../assets/markdowns/task2_description.md?raw'

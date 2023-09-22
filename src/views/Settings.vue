@@ -48,18 +48,18 @@ export default {
   data() {
     return {
       breadcrumbItems: [
-        { label: '赛题1', file: 'q01.md', status: { 'breadcrumb-item': true,  'active': true } },
-        { label: '赛题2', file: 'q02.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题3', file: 'q03.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题4', file: 'q04.md', status: { 'breadcrumb-item': true } },
-        { label: '赛题5', file: 'q05.md', status: { 'breadcrumb-item': true } },
+        { label: '赛题1', file: '/questions/q01.md', status: { 'breadcrumb-item': true,  'active': true } },
+        { label: '赛题2', file: '/questions/q02.md', status: { 'breadcrumb-item': true } },
+        { label: '赛题3', file: '/questions/q03.md', status: { 'breadcrumb-item': true } },
+        { label: '赛题4', file: '/questions/q04.md', status: { 'breadcrumb-item': true } },
+        { label: '赛题5', file: '/questions/q05.md', status: { 'breadcrumb-item': true } },
       ],
       markdownText: '',
       renderedMarkdown: '',
     };
   },
   mounted() {
-    fetch('src/views/questions/q01.md')
+    fetch('/questions/q01.md')
       .then((response) => response.text())
       .then((data) => {
         console.log(data);
@@ -76,7 +76,7 @@ export default {
       this.renderedMarkdown = md.render(this.markdownText);
     },
     renderFile(file) {
-      fetch('src/views/questions/' + file)
+      fetch(file)
         .then((response) => response.text())
         .then((data) => {
           console.log(data);

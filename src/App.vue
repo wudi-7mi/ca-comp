@@ -110,5 +110,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </template>
 
-<style scoped>
-</style>
+<script>
+  import 'highlight.js/styles/github.css';
+  import 'highlight.js/styles/a11y-light.css'
+</script>

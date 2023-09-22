@@ -2,14 +2,14 @@
   <main>
     <div class="bg-body-tertiary p-5 rounded mt-3">
       
-      <p class="content-title">赛题设置</p>
+      <p class="content-title" id="target">赛题设置</p>
 
       <p class="lead"><strong>【注意】参赛请填写该在线表格：<a href="http://docs.qq.com/sheet/DWFRaQWhJWERRSlBk?tab=BB08J2">群体智能算法大赛参赛队伍统计</a></strong></p>
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li :class="item.status" v-for="(item, index) in breadcrumbItems" :key="index">
-            <a v-if="item.file" href="#" @click="renderFile(item.file)">{{ item.label }}</a>
+            <a v-if="item.file" href="#target" @click="renderFile(item.file, item.num)">{{ item.label }}</a>
           </li>
         </ol>
       </nav>
@@ -35,6 +35,7 @@
       <a class="btn btn-lg btn-primary" href="#" role="button">赛题五数据 下载入口 &raquo;</a> -->
 
       <div v-html="renderedMarkdown"></div>
+      <a class="btn btn-lg btn-primary" :href="datasetLink[active]" role="button">{{ datasetText[active] }}</a>
     </div>
   </main>
 </template>
@@ -43,65 +44,125 @@
 import MarkdownIt from 'markdown-it';
 import MarkdownItKatex from 'markdown-it-katex';
 import { attrs } from '@mdit/plugin-attrs'
+import hljs from 'highlight.js';
 
-import q01 from '../assets/markdowns/q01.md?raw'
-import q02 from '../assets/markdowns/q02.md?raw'
-import q03 from '../assets/markdowns/q03.md?raw'
-import q04 from '../assets/markdowns/q04.md?raw'
-import q05 from '../assets/markdowns/q05.md?raw'
+import t01 from '../assets/markdowns/task1_description.md?raw'
+import t02 from '../assets/markdowns/task2_description.md?raw'
+import t03 from '../assets/markdowns/task3_description.md?raw'
+import t04 from '../assets/markdowns/task4_description.md?raw'
+import t05 from '../assets/markdowns/task5_description.md?raw'
 
 export default {
   data() {
     return {
       breadcrumbItems: [
-        { label: '赛题1', file: q01, status: { 'breadcrumb-item': true,  'active': true } },
-        { label: '赛题2', file: q02, status: { 'breadcrumb-item': true } },
-        { label: '赛题3', file: q03, status: { 'breadcrumb-item': true } },
-        { label: '赛题4', file: q04, status: { 'breadcrumb-item': true } },
-        { label: '赛题5', file: q05, status: { 'breadcrumb-item': true } },
+        { label: '赛题1', file: t01, status: { 'breadcrumb-item': true }, num: 1 },
+        { label: '赛题2', file: t02, status: { 'breadcrumb-item': true }, num: 2 },
+        { label: '赛题3', file: t03, status: { 'breadcrumb-item': true }, num: 3 },
+        { label: '赛题4', file: t04, status: { 'breadcrumb-item': true }, num: 4 },
+        { label: '赛题5', file: t05, status: { 'breadcrumb-item': true }, num: 5 },
       ],
       markdownText: '',
       renderedMarkdown: '',
+      active: 0,
+      datasetLink: [
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+      ],
+      datasetText: [
+        "赛题1数据下载入口",
+        "赛题2数据下载入口",
+        "赛题3数据下载入口",
+        "赛题4数据下载入口",
+        "赛题5数据下载入口",
+      ],
     };
   },
   mounted() {
-    // fetch(q01)
-    //   .then((response) => response.text())
-    //   .then((data) => {
-    //     console.log(data);
-    //     this.markdownText = data;
-    //     this.renderMarkdown();
-    //   });
-    this.markdownText = q01;
-    this.renderMarkdown();
+    this.renderFile(t01, 1);
+    this.classSet()
   },
   methods: {
     renderMarkdown() {
       const md = new MarkdownIt({
         html: true,
         linkifyL: true,
+        highlight: (str, lang) => {
+          if (lang && hljs.getLanguage(lang)) {
+            try {
+            return hljs.highlight(str, { language: lang }).value;
+            }  catch (__) {}
+          }
+          return '';
+        }
       }).use(MarkdownItKatex).use(attrs, {});
       this.renderedMarkdown = md.render(this.markdownText);
     },
-    renderFile(file) {
+    renderFile(file, num) {
       this.markdownText = file;
       this.renderMarkdown();
-    }
-    // renderFile(file) {
-    //   fetch(file)
-    //     .then((response) => response.text())
-    //     .then((data) => {
-    //       console.log(data);
-    //       this.markdownText = data;
-    //       this.renderMarkdown();
-    //     });
-    // }
+      this.active = num - 1
+    },
+    classSet() {
+      const tableElements = document.getElementsByTagName("table");
+
+      for (let i = 0; i < tableElements.length; i++) {
+        tableElements[i].classList.add("table");
+        tableElements[i].classList.add("table-striped");
+        tableElements[i].classList.add("center");
+        tableElements[i].classList.add("table-bordered");
+        tableElements[i].classList.add("text-center");
+        tableElements[i].classList.add("align-middle");
+      }
+
+      const preElements = document.getElementsByTagName("pre")
+      console.log(preElements)
+      for (let i = 0; i < preElements.length; i++) {
+        preElements[i].classList.add("bg-body-secondary");
+        preElements[i].classList.add("rounded");
+        preElements[i].classList.add("p-4");
+
+      }
+    },
   },
+  updated() {
+    this.classSet();
+  }
 };
 </script>
 
 <style>
- .katex-html {
-  display: none;
- }
+  .katex-html {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  pre {
+    margin-top: 20px;
+  }
 </style>

@@ -4,7 +4,7 @@
       
       <p class="content-title" id="target">赛题设置</p>
 
-      <p class="lead"><strong>【注意】参赛请填写该在线表格：<a href="http://docs.qq.com/sheet/DWFRaQWhJWERRSlBk?tab=BB08J2" target="_blank">群体智能算法大赛参赛队伍统计</a></strong></p>
+      <p class="lead"><strong>【注意】参赛请填写该在线表格：<a href="http://docs.qq.com/sheet/DWFRaQWhJWERRSlBk?tab=BB08J2" target="_blank">社交群体智能算法大赛参赛队伍统计</a></strong></p>
       
       <p class="content-subtitle">数据集下载</p>
 

@@ -81,19 +81,19 @@ import { RouterLink, RouterView } from 'vue-router'
   <main class="container">
     <div class="p-4 p-md-5 mb-4 rounded bg-body-secondary">
       <div class="row d-flex justify-content-evenly">
-        <div class="col-lg-9">
+        <div class="col-lg-10">
   
-          <h1 class="display-4 main-title">群体智能算法大赛</h1>
+          <h1 class="display-4 main-title">首届社交群体智能算法大赛</h1>
   
           <p class="lead my-4 stressed">汇众智 创未来</p>
-          <p class="lead my-2 pe-4">群体智能算法大赛重点面向社交媒体平台，探索群智计算理论和模型在认知决策过程中的作用。</p>
+          <p class="lead my-2 pe-4">社交群体智能算法大赛重点面向社交媒体平台，探索群智计算理论和模型在认知决策过程中的作用。</p>
           <p class="lead my-2 pe-4">本竞赛以提升社交媒体平台信息质量与交互环境为出发点，首先基于进行社交媒体平台虚假账号检测，避免大量虚假账号传播虚假信息影响网络空间环境，进一步挖掘网络热点件中的观点片段，分析理解群体用户的情感倾向与会话关系，最终实现群体会话场景下的高质量会话内容生成，利用群体智能为社交媒体平台提供高质量信息，促进群体智能在社交媒体领域的产业应用与健康发展。</p>
 
           <!-- <p class="lead mb-0"><a href="/" class="text-body-emphasis fw-bold">持续更新...</a></p> -->
   
         </div>
-        <div class="col-lg-3">
-          <img src="/hover.jpg" alt="封面" class="img-fluid rounded" style="width: 250px;">
+        <div class="col-lg-2">
+          <img src="/hover.jpg" alt="封面" class="img-fluid rounded mt-5">
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <footer class="footer mt-auto py-3">
     <div class="container text-center">
-      <span class="text-body-secondary">版权所有 © 2023 群体智能算法大赛</span>
+      <span class="text-body-secondary">版权所有 © 2023 社交群体智能算法大赛</span>
     </div>
   </footer>
 

@@ -9,46 +9,46 @@
       <p class="lead">大赛以习近平新时代中国特色社会主义思想为指导，深入贯彻党中央、国务院重大决策部署，聚焦《“十四五”新一代人工智能发展规划》重大技术攻关需求，激发该领域创新创造活力，加快前沿科技人才队伍建设，激励各类人才投身群体智能技术高质量发展。大赛积极构建“产学研用”深度融合的协同创新平台，推动人工智能技术与产业融合，促进技术在经济社会各领域的广泛应用，推动我国人工智能产业实现跨越式发展。</p>        
       
       <p class="content-title">大赛组织机构</p>
-      <p class="lead">大赛由中国指挥与控制学会主办，西北工业大学、中国指挥与控制学会大数据科学与工程专委会、陕西省计算机学会和陕西省军民融合发展委员会办公室共同承办，北京中科闻歌科技股份有限公司和航天科工集团智能科技研究院协办。</p>
+      <p class="lead">大赛由中国指挥与控制学会主办，西北工业大学、中国指挥与控制学会大数据科学与工程专委会、陕西省计算机学会共同承办，北京中科闻歌科技股份有限公司和中国网络空间研究院协办。</p>
       <p class="lead">大赛设立组织委员会，负责大赛的组织领导和统筹协调。大赛组委会下设组委会办公室、专家委员会、竞赛事务和纪律监督等机构。大赛组委会办公室设在西北工业大学，承担大赛组委会日常工作，负责大赛的方案设计、宣传推广、组织实施和技术保障等。大赛组委会专家委员会负责参与大赛方案研究、赛题准备、赛事评审和后续项目转化等。</p>
       
-      <p align="center" class="stressed">群体智能算法大赛组织委员会</p>
+      <p align="center" class="stressed">社交群体智能算法大赛组织委员会</p>
       <div class="table-responsive small">
         <table class="table table-striped table-sm table-bordered">
           <tbody>
             <tr style="text-align: center;">
-              <td style="text-align: center;" class="stressed">主任</td>
-              <td>费爱国 </td>
-              <td>院士</td>
-              <td>中国工程院</td>
+              <td style="text-align: center;" class="stressed">荣誉主席</td>
+              <td>曾大军</td>
+              <td>研究员</td>
+              <td>中国科学院自动化研究所</td>
+            </tr>
+            <tr style="text-align: center;">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>中国指挥与控制学会大数据科学与工程专委会主任</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
-                <td>周兴社</td>
+                <td>於志文</td>
                 <td>教授</td>
                 <td>西北工业大学</td>
             </tr>
             <tr style="text-align: center;">
-                <td style="text-align: center;" class="stressed">副主任</td>
-                <td>张鑫</td>
-                <td>研究员</td>
-                <td>中国人民解放军国防科技大学</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td></td>
+                <td style="text-align: center;" class="stressed">执行委员会主席</td>
                 <td>沈华伟</td>
                 <td>教授</td>
                 <td>中国科学院计算技术研究所</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
-                <td>郭斌 </td>
+                <td>郭斌</td>
                 <td>教授</td>
                 <td>西北工业大学</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
-                <td>郑晓龙</td>
+                <td>郑晓龙 </td>
                 <td>研究员</td>
                 <td>中国科学院自动化研究所</td>
             </tr>
@@ -60,27 +60,21 @@
             </tr>
             <tr style="text-align: center;">
                 <td></td>
-                <td></td>
-                <td></td>
-                <td>航天科工集团智能科技研究院</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td style="text-align: center;" class="stressed">委员</td>
-                <td>郝艳霞</td>
-                <td></td>
-                <td>陕西省委军民融合发展委员会办公室</td>
+                <td>杨阳朝</td>
+                <td>研究员</td>
+                <td>中国网络空间研究院</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
+                <td>顾益军</td>
+                <td>教授</td>
+                <td>中国公安大学</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="text-align: center;" class="stressed">组织委员会主席</td>
                 <td>刘昕明</td>
                 <td>副总经理</td>
                 <td>北京中科闻歌科技股份有限公司</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>中科院文献情报中心</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
@@ -96,24 +90,24 @@
             </tr>
             <tr style="text-align: center;">
                 <td></td>
-                <td></td>
-                <td></td>
-                <td>中国公安大学</td>
-            </tr>
-            <tr style="text-align: center;">
-                <td></td>
                 <td>李阳阳</td>
-                <td></td>
-                <td>网络空间研究员</td>
+                <td>高级工程师</td>
+                <td>中国网络空间研究院</td>
             </tr>
             <tr style="text-align: center;">
-                <td style="text-align: center;" class="stressed">秘书处</td>
+                <td></td>
                 <td>梁韵基</td>
                 <td>副教授</td>
                 <td>西北工业大学</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
+                <td>邰振赢</td>
+                <td>副教授</td>
+                <td>北京航空航天大学</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="text-align: center;" class="stressed">秘书</td>
                 <td>赵崟岑</td>
                 <td>研究助理</td>
                 <td>西北工业大学</td>

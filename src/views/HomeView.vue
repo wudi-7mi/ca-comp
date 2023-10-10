@@ -24,6 +24,18 @@
             </tr>
             <tr style="text-align: center;">
                 <td style="text-align: center;" class="stressed">执行委员会主席</td>
+                <td>於志文</td>
+                <td>教授</td>
+                <td>西北工业大学</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>人机物融合群智计算教育部重点实验室主任</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td></td>
                 <td>沈华伟</td>
                 <td>研究员</td>
                 <td>中国科学院计算技术研究所</td>
@@ -50,7 +62,7 @@
                 <td></td>
                 <td>杨阳朝</td>
                 <td>研究员</td>
-                <td>中国网络空间研究院</td>
+                <td>网络空间研究院</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>
@@ -80,7 +92,7 @@
                 <td></td>
                 <td>李阳阳</td>
                 <td>高级工程师</td>
-                <td>中国网络空间研究院</td>
+                <td>网络空间研究院</td>
             </tr>
             <tr style="text-align: center;">
                 <td></td>

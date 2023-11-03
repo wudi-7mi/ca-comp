@@ -4,6 +4,7 @@ import Plan from '../views/Plan.vue'
 import Settings from '../views/Settings.vue'
 import Submit from '../views/Submit.vue'
 import Test from '../views/Test.vue'
+import LeaderBoard from '../views/LeaderBoard.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/test',
       name: 'test',
       component: Test
+    },
+    {
+      path: '/LeaderBoard',
+      name: 'leaderboard',
+      component: LeaderBoard
     }
   ]
 })

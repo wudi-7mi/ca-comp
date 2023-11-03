@@ -70,6 +70,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <li><router-link to="/settings" class="nav-link px-2">赛题设置</router-link></li>
 
           <li><router-link to="/submit" class="nav-link px-2">提交方式</router-link></li>
+          <li><router-link to="/leaderboard" class="nav-link px-2">评测结果</router-link></li>
         </ul>
       </div>
       <div class="col-md-3 text-end">
